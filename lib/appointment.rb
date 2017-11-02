@@ -1,7 +1,7 @@
 class Appointment
 
   #Variables
-  attr_accessor :date, :doctor
+  attr_accessor :date, :doctor, :patient
 
 
   def initialize(date, doctor)
