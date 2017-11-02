@@ -1,4 +1,4 @@
-class Song
+class Appointment
 
   #Variables
   attr_accessor :name, :patient
