@@ -1,25 +1,24 @@
 class Doctor
 
   #Variables
-  attr_accessor :name
-  @@appointments
+  attr_accessor :name, :appointments
 
   def initialize(name)
     @name = name
-    @@appointments = []
+    @appointments = []
   end
 
   #Methods
   def add_appointment(appointment)
-    @@appointments << appointment
+    @appointments << appointment
   end
 
   def appointments
-    @@appointments
+    @appointments
   end
 
   def patients
-    @@appointments.collect do |song|
+    @appointments.collect do |song|
       appointment.patient
     end
   end
